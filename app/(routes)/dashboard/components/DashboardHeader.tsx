@@ -11,7 +11,7 @@ const menuOptions = [
 
 export default function AppHeader() {
   return (
-    <div className="flex justify-between items-center p-5 px-10 shadow-md md:px-20 lg:px-44">
+    <div className="flex justify-between items-center p-5 px-10 shadow-md md:px-20 lg:px-40">
       <Link href={"/"}>
         <div className="flex items-center gap-2  cursor-pointer">
           <div className="size-7 rounded-full bg-gradient-to-r from-[#33B7B4] to-[#55B3EA]" />

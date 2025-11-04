@@ -19,6 +19,7 @@ import Link from "next/link";
 import { SignOutButton, useAuth, UserButton, UserProfile } from "@clerk/nextjs";
 
 function Hero() {
+  const { isSignedIn } = useAuth();
   return (
     <div>
       <div className="relative mx-auto flex bg-[#EAF8FD] flex-col items-center  justify-center">
@@ -67,7 +68,7 @@ function Hero() {
             best in class, state of the art, cutting edge AI tools to get your
             website up.
           </motion.p>
-          <Link href={"/dashboard"}>
+          <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
             <motion.div
               initial={{
                 opacity: 0,
