@@ -68,7 +68,7 @@ function Hero() {
             best in class, state of the art, cutting edge AI tools to get your
             website up.
           </motion.p>
-          <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
+          <Link href={isSignedIn ? "/dashboard" : "/sign-in"}>
             <motion.div
               initial={{
                 opacity: 0,
