@@ -4,7 +4,7 @@ import HistoryTable from "./components/HistoryTable";
 function page() {
   return (
     <div>
-      <HistoryTable />
+     dasdas
     </div>
   );
 }
